@@ -23,4 +23,9 @@ export class AppComponent {
     link.value = '';
   return false;
   }
+
+  //mostro gli articoli in base ai voti: ordine decrescente
+  sortedArticles(): Article[] {
+    return this.articles.sort((a: Article, b: Article) => b.votes - a.votes);
+  }  
 }
