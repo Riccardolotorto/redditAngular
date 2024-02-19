@@ -11,15 +11,16 @@ export class Article {     //creo una classe article
       this.votes = votes || 0;
     }
 
-    voteUp(): void {
+    voteUp(): void {    //void vuol dire che non restituisce nulla
         this.votes += 1;
     }
     
       voteDown(): void {
         this.votes -= 1;
     }
-    
-      // domain() is a utility function that extracts
+
+      // metodo che prende solo il dominio da un link
+      // domain() is a utility function that extracts ---- returns a string
       // the domain from a URL, which we'll explain shortly
     domain(): string {
     try {// e.g. http://foo.com/path/to/bar
